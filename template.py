@@ -10,7 +10,7 @@ project_name = "textSummarizer"
 list_of_files = [
          #help in CI/CD deployment ie whenever we commit , it will automatically got update
          #in cloud , yaml file
-        " .github/workflow/.gitkeep",
+        ".github/workflow/.gitkeep",
         f"src/{project_name}/__init__.py",
         #__init__.py is constructor file - help in file import in local pacage
         f"src/{project_name}/components/__init__.py",
@@ -48,5 +48,5 @@ for filepath in list_of_files:
             logging.info(f"Creating empty file : {filepath}")
     
     else:
-        logging.info(f"{filepath} already exists ")
+        logging.info(f"{filename} already exists ")
 
